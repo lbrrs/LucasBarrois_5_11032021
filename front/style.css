@@ -1,0 +1,76 @@
+#logo {
+    width: 30%;
+}
+
+.panier {
+    font-size: large;
+    font-weight: 400;
+}
+
+.card {
+    width: 500px;
+    margin: 30px;
+}
+
+.box_shadow:hover {
+    box-shadow: 5px 5px 20px 2px grey;
+}
+
+.card-img-top {
+    height: 325px;
+}
+
+h5 {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+.navbar, .card, footer {
+    background-color: #f3eaf1;
+}
+
+.text_footer {
+    text-align: unset;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#name {
+    text-align: center;
+}
+
+#image {
+    width: 90%;
+
+}
+
+.produitBox {
+    margin-top: 80px;
+    padding-bottom: 30px;
+    border: 1px solid #f3eaf1;
+    border-radius: 20px;
+    background-color: #f3eaf1;
+    margin-bottom: 80px;
+}
+
+.box2 {
+    margin-top: 120px;
+}
+
+#price {
+    text-align: right;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+#payment {
+    margin-bottom: 50px;
+}
