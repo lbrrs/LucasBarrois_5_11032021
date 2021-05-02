@@ -25,7 +25,6 @@ const getBasketItem = (i) => {
     name = document.createElement("h3"),
     price = document.createElement("h4"),
     image = document.createElement("img"),
-    //productPageLink = document.createElement("a"),
     urlPage = "product.html?id=" + basketItems[i]._id,
     selectedVarnish = document.createElement("h4"),
     quantity = document.createElement("div"),
@@ -36,8 +35,6 @@ const getBasketItem = (i) => {
   // Remplissage des éléments
   name.appendChild(document.createTextNode(basketItems[i].name));
   image.src = basketItems[i].imageUrl;
-  //productPageLink.appendChild(document.createTextNode("Voir la page du produit"));
-  //productPageLink.setAttribute('href', urlPage);
   selectedVarnish.appendChild(document.createTextNode(basketItems[i].selectedVarnish));
   modifyQuantityButton.appendChild(document.createTextNode("Modifier la quantité"));
   deleteItemButton.appendChild(document.createTextNode("Supprimer"));
@@ -45,15 +42,12 @@ const getBasketItem = (i) => {
 
 
   //Stylisation des éléments
-  //productPageLink.classList.add("btn", "btn-secondary");
-  //productPageLink.setAttribute("role", "button");
   basketItem.classList.add("card", "border-light", "text-center", "m-4", "w-25");
   basketItem.setAttribute("data-id", basketItems[i]._id);
   basketItem.setAttribute("data-lense", basketItems[i].selectedVarnish);
   image.classList.add("card-img-top");
   basketItemBody.classList.add("card-body");
   name.classList.add("card-title");
-  //productPageLink.classList.add("card-footer");
   quantity.classList.add("d-flex", "flex-row");
   selectedQuantity.classList.add("form-control", "w-25");
   selectedQuantity.setAttribute("value", basketItems[i].selectedQuantity);
@@ -72,7 +66,6 @@ const getBasketItem = (i) => {
   basketItem.appendChild(image);
   basketItem.appendChild(basketItemBody);
   basketItem.appendChild(deleteItemButton);
-  //basketItem.appendChild(productPageLink);
 
   // Placement de la camera dans le ul
   basket.appendChild(basketItem);
@@ -217,6 +210,7 @@ const submitPayment = () => {
     email: email.value
   },
     products = productsID;
+    
   //Récupérer l'orderId
   fetch('http://localhost:9000/api/cameras/order', {
     method: 'post',

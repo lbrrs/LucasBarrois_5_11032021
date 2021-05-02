@@ -1,5 +1,3 @@
-
-
 const manageBasketDisplay = () => {
     //Vérifier si le panier possède au moins une fourniture :
    if (localStorage.getItem("basket") === null || localStorage.getItem("basket") === "[]") {
