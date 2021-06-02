@@ -74,3 +74,33 @@ footer {
 #payment {
     margin-bottom: 50px;
 }
+
+#greenText {
+    position: absolute;
+    z-index: 99;
+    background-color:#3D8E3D;
+    display: none;
+    left: 42.5%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#redText {
+    position: absolute;
+    z-index: 99;
+    background-color: #FF1E1E;
+    display: none;
+    left: 42.5%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#confirmText {
+    position: absolute;
+    z-index: 99;
+    background-color: #3D8E3D;
+    display: none;
+    left: 42.5%;
+    padding: 50px;
+    border-radius: 20px;
+}

@@ -2,7 +2,7 @@ let basketItems = JSON.parse(localStorage.getItem("basket"));
 let productsID = [];
 
 const manageBasketDisplay = () => {
-  //Vérifier si le panier possède au moins une caméra :
+  //Vérifier si le panier possède au moins une fourniture :
   if (localStorage.getItem("basket") === null || localStorage.getItem("basket") === "[]") {
     document.querySelector(".basketPage").parentNode.hidden = true;
   } else {
