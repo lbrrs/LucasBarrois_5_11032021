@@ -225,7 +225,7 @@ const submitPayment = () => {
     products = productsID;
     
   //Récupérer l'orderId
-  fetch('http://localhost:9000/api/cameras/order', {
+  fetch('http://localhost:9000/api/furniture/order', {
     method: 'post',
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -235,6 +235,7 @@ const submitPayment = () => {
   })
     .then(response => response.json())
     .then(order => {
+      console.log(order);
       localStorage.setItem("orderId", order.orderId);
       window.location.href = "order.html";
     })
