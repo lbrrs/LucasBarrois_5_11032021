@@ -12,7 +12,7 @@ let productsID = [];
 
 const returnToHomePageIfUserEmptyTheBasket = () => {
   if (localStorage.getItem("basket") === null || localStorage.getItem("basket") === "[]") {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   }
 }
 
@@ -42,7 +42,7 @@ const getBasketItem = (i) => {
   price.appendChild(document.createTextNode((basketItems[i].price * basketItems[i].selectedQuantity / 100).toLocaleString("en") + " $"));
 
   //Stylisation des éléments
-  basketItem.classList.add("card", "border-light", "text-center", "m-4", "w-25");
+  basketItem.classList.add("card", "border-light", "text-center", "m-4", "basket_card");
   basketItem.setAttribute("data-id", basketItems[i]._id);
   basketItem.setAttribute("data-lense", basketItems[i].selectedVarnish);
   image.classList.add("card-img-top");

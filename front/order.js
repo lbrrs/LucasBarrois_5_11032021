@@ -4,9 +4,9 @@ let productsID = [];
 const manageBasketDisplay = () => {
   //Vérifier si le panier possède au moins une fourniture :
   if (localStorage.getItem("basket") === null || localStorage.getItem("basket") === "[]") {
-    document.querySelector(".basketPage").parentNode.hidden = true;
+    document.querySelector(".basketPage").parentNode = true;
   } else {
-    document.querySelector(".basketPage").parentNode.hidden = false;
+    document.querySelector(".basketPage").parentNode = false;
   }
 }
 

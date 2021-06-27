@@ -2,15 +2,23 @@
     width: 30%;
 }
 
+.logo_link {
+    display: initial;
+}
+
 .panier {
-    font-size: large;
-    font-weight: 400;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .card {
-    width: 500px;
+    width: 25%;
     margin: 30px;
 }
+
+/*.basket_card {
+    width: 50%;
+}*/
 
 .box_shadow:hover {
     box-shadow: 5px 5px 20px 2px grey;
@@ -103,4 +111,37 @@ footer {
     left: 42.5%;
     padding: 50px;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 850px)
+{
+    .navbar {
+        flex-wrap: unset;
+    }
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .container {
+        display: initial;
+    }
+    .d-flex {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .navbar {
+        flex-wrap: unset;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    .basket_card {
+        width: 100%;
+    }
 }
